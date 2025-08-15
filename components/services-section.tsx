@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { X, ArrowRight, Megaphone, Bot, Sparkles, BookOpen } from "lucide-react"
 import servicesData from "@/data/services.json"
@@ -26,6 +26,15 @@ const iconMap = {
 
 export default function ServicesSection() {
   const [selectedService, setSelectedService] = useState<Service | null>(null)
+
+  // Disable background scroll when modal is open
+  useEffect(() => {
+    if (selectedService) {
+      document.body.style.overflow = "hidden"
+    } else {
+      document.body.style.overflow = ""
+    }
+  }, [selectedService])
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -156,7 +165,7 @@ export default function ServicesSection() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
               transition={{ type: "spring", damping: 20, stiffness: 300 }}
-              className="bg-gradient-to-br from-gray-900 via-gray-800 to-black p-8 rounded-2xl border border-yellow-400/30 max-w-2xl w-full max-h-[80vh] overflow-y-auto"
+              className="bg-gradient-to-br from-gray-900 via-gray-800 to-black p-8 rounded-2xl border border-yellow-400/30 max-w-2xl w-full max-h-[80vh] overflow-y-auto no-scrollbar"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Modal Header */}
