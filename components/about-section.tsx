@@ -32,11 +32,11 @@ export default function AboutSection() {
   return (
     <section id="about" className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black py-20">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-12 gap-8 lg:gap-12">
-          {/* Left Half - Content */}
-          <div className="col-span-12 lg:col-span-6 order-2 lg:order-1">
-            <div className="space-y-12">
-              {/* Introductory Text */}
+       <div className="grid grid-cols-12 gap-8 lg:gap-12 items-center">
+  {/* Left Half - Content */}
+  <div className="col-span-12 lg:col-span-5 lg:col-start-2">
+          <div className="space-y-12">
+                    {/* Introductory Text */}
               <div className="space-y-6">
                 <h2 className="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-yellow-400 to-white bg-clip-text text-transparent">
                   About HUMAX CORP
@@ -80,9 +80,9 @@ export default function AboutSection() {
             </div>
           </div>
 
-          {/* Right Half - Image with Animations */}
-          <div className="col-span-12 lg:col-span-6 order-1 lg:order-2">
-            <div className="relative h-96 lg:h-full min-h-[500px] flex items-center justify-center">
+         {/* Right Half - Image with Animations */}
+<div className="col-span-12 lg:col-span-6 lg:col-start-7 order-1 lg:order-2">
+  <div className="relative h-96 lg:h-full min-h-[500px] flex items-center justify-center">
               {/* Main Image Container */}
               <div className="relative w-80 h-80 lg:w-96 lg:h-96">
                 {/* Background Glow */}
