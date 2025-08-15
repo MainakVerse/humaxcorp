@@ -150,73 +150,77 @@ export default function ServicesSection() {
         </motion.div>
       </div>
 
+    
       {/* Modal */}
-      <AnimatePresence>
-        {selectedService && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+<AnimatePresence>
+  {selectedService && (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+      onClick={() => setSelectedService(null)}
+    >
+      <motion.div
+        initial={{ scale: 0.8, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        exit={{ scale: 0.8, opacity: 0 }}
+        transition={{ type: "spring", damping: 20, stiffness: 300 }}
+        className="bg-gradient-to-br from-gray-900 via-gray-800 to-black p-8 rounded-2xl border border-yellow-400/30 max-w-2xl w-full h-[90vh] flex flex-col overflow-hidden no-scrollbar"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Modal Header */}
+        <div className="flex justify-between items-start mb-6 flex-shrink-0">
+          <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent">
+            {selectedService.modalContent.title}
+          </h3>
+          <button
             onClick={() => setSelectedService(null)}
+            className="text-gray-400 hover:text-yellow-400 transition-colors p-2"
           >
-            <motion.div
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.8, opacity: 0 }}
-              transition={{ type: "spring", damping: 20, stiffness: 300 }}
-              className="bg-gradient-to-br from-gray-900 via-gray-800 to-black p-8 rounded-2xl border border-yellow-400/30 max-w-2xl w-full max-h-[80vh] overflow-y-auto no-scrollbar"
-              onClick={(e) => e.stopPropagation()}
-            >
-              {/* Modal Header */}
-              <div className="flex justify-between items-start mb-6">
-                <h3 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-yellow-400 to-yellow-300 bg-clip-text text-transparent">
-                  {selectedService.modalContent.title}
-                </h3>
-                <button
-                  onClick={() => setSelectedService(null)}
-                  className="text-gray-400 hover:text-yellow-400 transition-colors p-2"
+            <X className="w-6 h-6" />
+          </button>
+        </div>
+
+        {/* Modal Content */}
+        <div className="space-y-6 flex-grow overflow-hidden">
+          <p className="text-gray-300 text-md leading-relaxed truncate">
+            {selectedService.modalContent.description}
+          </p>
+
+          <div>
+            <h4 className="text-xl font-semibold text-yellow-400 mb-4">Key Features:</h4>
+            <ul className="space-y-3">
+              {selectedService.modalContent.features.map((feature, index) => (
+                <motion.li
+                  key={index}
+                  initial={{ opacity: 0, x: -20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  className="flex items-start text-gray-300 truncate"
                 >
-                  <X className="w-6 h-6" />
-                </button>
-              </div>
+                  <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                  <span className="leading-relaxed">{feature}</span>
+                </motion.li>
+              ))}
+            </ul>
+          </div>
+        </div>
 
-              {/* Modal Content */}
-              <div className="space-y-6">
-                <p className="text-gray-300 text-md leading-relaxed">{selectedService.modalContent.description}</p>
+        {/* Modal Footer */}
+        <div className="mt-8 pt-6 border-t border-gray-700 flex-shrink-0">
+          <button
+            onClick={() => setSelectedService(null)}
+            className="w-full py-3 px-6 bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-semibold rounded-lg hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300 transform hover:scale-105"
+          >
+            Close
+          </button>
+        </div>
+      </motion.div>
+    </motion.div>
+  )}
+</AnimatePresence>
 
-                <div>
-                  <h4 className="text-xl font-semibold text-yellow-400 mb-4">Key Features:</h4>
-                  <ul className="space-y-3">
-                    {selectedService.modalContent.features.map((feature, index) => (
-                      <motion.li
-                        key={index}
-                        initial={{ opacity: 0, x: -20 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ delay: index * 0.1 }}
-                        className="flex items-start text-gray-300"
-                      >
-                        <div className="w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                        <span className="leading-relaxed">{feature}</span>
-                      </motion.li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-
-              {/* Modal Footer */}
-              <div className="mt-8 pt-6 border-t border-gray-700">
-                <button
-                  onClick={() => setSelectedService(null)}
-                  className="w-full py-3 px-6 bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-semibold rounded-lg hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300 transform hover:scale-105"
-                >
-                  Close
-                </button>
-              </div>
-            </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </section>
   )
 }
