@@ -137,7 +137,7 @@ export default function FooterSection() {
           <p className="text-gray-400 text-sm">
             © {new Date().getFullYear()} HUMAX CORP. All rights reserved.
           </p>  
-            <p className="text-gray-400 text-sm mt-2 md:mt-0">Built by Supernova Business</p>
+            <p className="text-gray-400 text-sm mt-2 md:mt-0"><a href="https://supernovabusiness.in/">Built by Supernova Business</a></p>
           </div>
         </div>
       </div>
