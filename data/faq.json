@@ -1,0 +1,35 @@
+{
+    "faqs": [
+      {
+        "id": 1,
+        "question": "What services does HUMAX CORP offer?",
+        "answer": "HUMAX CORP offers a comprehensive suite of business solutions including Digital Services & PR, Website & AI development, Life Transformation coaching, and Wikipedia Services. We help businesses elevate their digital presence and achieve extraordinary results."
+      },
+      {
+        "id": 2,
+        "question": "How long does it take to complete a project?",
+        "answer": "Project timelines vary depending on the scope and complexity. Typically, website projects take 2-4 weeks, PR campaigns run 3-6 months, and Wikipedia services take 4-8 weeks. We provide detailed timelines during our initial consultation."
+      },
+      {
+        "id": 3,
+        "question": "Do you provide ongoing support after project completion?",
+        "answer": "Yes, we offer comprehensive post-project support including maintenance, updates, and optimization services. Our support packages are tailored to your specific needs and can include monthly maintenance, performance monitoring, and strategic consultations."
+      },
+      {
+        "id": 4,
+        "question": "What makes HUMAX CORP different from other agencies?",
+        "answer": "Our unique approach combines cutting-edge technology with personalized service. We focus on delivering measurable results through data-driven strategies, innovative AI solutions, and our award-winning team's expertise across multiple industries."
+      },
+      {
+        "id": 5,
+        "question": "How do you ensure the quality of your work?",
+        "answer": "We maintain strict quality standards through rigorous testing, peer reviews, and client feedback loops. Our team follows industry best practices and uses advanced tools to ensure every deliverable meets our high standards and exceeds client expectations."
+      },
+      {
+        "id": 6,
+        "question": "Can you work with businesses of all sizes?",
+        "answer": "We work with startups, SMEs, and enterprise-level organizations. Our scalable solutions and flexible approach allow us to adapt our services to meet the unique needs and budgets of businesses at any stage of growth."
+      }
+    ]
+  }
+  

@@ -1,0 +1,20 @@
+{
+    "features": [
+      {
+        "icon": "CheckCircle",
+        "title": "Proven Excellence",
+        "description": "Over 500+ successful projects delivered with exceptional quality and client satisfaction."
+      },
+      {
+        "icon": "Users",
+        "title": "Expert Team",
+        "description": "Dedicated professionals with years of experience in digital transformation and business growth."
+      },
+      {
+        "icon": "Target",
+        "title": "Strategic Focus",
+        "description": "Data-driven approaches that align with your business objectives and market demands."
+      }
+    ]
+  }
+  

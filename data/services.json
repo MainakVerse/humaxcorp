@@ -1,0 +1,92 @@
+{
+  "services": [
+    {
+      "id": "digital-services",
+      "title": "Digital Services & PR",
+      "icon": "Megaphone",
+      "bulletPoints": [
+        "Strategic digital marketing campaigns",
+        "Public relations and brand management",
+        "Social media optimization and growth"
+      ],
+      "modalContent": {
+        "title": "Digital Services & PR",
+        "description": "Transform your digital presence with our comprehensive suite of digital marketing and public relations services. We help businesses build strong online reputations and reach their target audiences effectively.",
+        "features": [
+          "Strategic digital marketing campaigns tailored to your business goals",
+          "Professional public relations management to enhance brand reputation",
+          "Social media optimization and growth strategies",
+          "Content creation and distribution across multiple platforms",
+          "Crisis management and reputation recovery services",
+          "Influencer partnerships and collaboration management"
+        ]
+      }
+    },
+    {
+      "id": "website-ai",
+      "title": "Website & AI",
+      "icon": "Bot",
+      "bulletPoints": [
+        "Custom website development and design",
+        "AI-powered automation solutions",
+        "Advanced analytics and insights"
+      ],
+      "modalContent": {
+        "title": "Website & AI Solutions",
+        "description": "Leverage cutting-edge technology with our website development and AI integration services. We create intelligent, responsive websites that drive business growth and enhance user experiences.",
+        "features": [
+          "Custom website development with modern frameworks",
+          "AI-powered chatbots and customer service automation",
+          "Advanced analytics and business intelligence dashboards",
+          "Machine learning integration for personalized user experiences",
+          "E-commerce solutions with AI-driven recommendations",
+          "Performance optimization and SEO enhancement"
+        ]
+      }
+    },
+    {
+      "id": "life-transformation",
+      "title": "Life Transformation",
+      "icon": "Sparkles",
+      "bulletPoints": [
+        "Personal development coaching",
+        "Career advancement strategies",
+        "Wellness and mindfulness programs"
+      ],
+      "modalContent": {
+        "title": "Life Transformation Services",
+        "description": "Unlock your full potential with our comprehensive life transformation programs. We provide personalized coaching and strategies to help you achieve your personal and professional goals.",
+        "features": [
+          "One-on-one personal development coaching sessions",
+          "Career advancement and leadership development programs",
+          "Wellness and mindfulness training workshops",
+          "Goal setting and achievement tracking systems",
+          "Work-life balance optimization strategies",
+          "Confidence building and communication skills enhancement"
+        ]
+      }
+    },
+    {
+      "id": "wikipedia-services",
+      "title": "Wikipedia Services",
+      "icon": "BookOpen",
+      "bulletPoints": [
+        "Wikipedia page creation and management",
+        "Content verification and citations",
+        "Reputation management on Wikipedia"
+      ],
+      "modalContent": {
+        "title": "Wikipedia Services",
+        "description": "Establish and maintain your presence on Wikipedia with our specialized services. We help individuals and businesses create accurate, well-sourced Wikipedia pages that enhance credibility and online visibility.",
+        "features": [
+          "Professional Wikipedia page creation following all guidelines",
+          "Content verification and proper citation management",
+          "Reputation management and page monitoring services",
+          "Conflict of interest disclosure and ethical editing practices",
+          "Regular updates and maintenance of existing pages",
+          "Wikipedia policy compliance and best practices consultation"
+        ]
+      }
+    }
+  ]
+}

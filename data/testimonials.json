@@ -1,0 +1,59 @@
+{
+    "testimonials": [
+      {
+        "id": 1,
+        "name": "Sarah Johnson",
+        "position": "CEO",
+        "company": "TechVision Inc.",
+        "image": "/testimonials/emp1.png?height=80&width=80",
+        "rating": 5,
+        "testimonial": "HUMAX CORP transformed our digital presence completely. Their strategic approach to PR and digital marketing increased our brand visibility by 300%. The team's expertise in AI integration helped us streamline our operations significantly."
+      },
+      {
+        "id": 2,
+        "name": "Michael Chen",
+        "position": "Founder",
+        "company": "InnovateLab",
+        "image": "/testimonials/emp2.png?height=80&width=80",
+        "rating": 5,
+        "testimonial": "The website development and AI solutions provided by HUMAX CORP exceeded our expectations. Our online conversion rate improved by 250%, and the automated systems they implemented saved us countless hours of manual work."
+      },
+      {
+        "id": 3,
+        "name": "Emily Rodriguez",
+        "position": "Marketing Director",
+        "company": "GrowthMax Solutions",
+        "image": "/testimonials/emp3.png?height=70&width=80",
+        "rating": 5,
+        "testimonial": "Working with HUMAX CORP was a game-changer for our business. Their life transformation coaching helped our team achieve unprecedented productivity levels, while their Wikipedia services established our authority in the industry."
+      },
+      {
+        "id": 4,
+        "name": "David Thompson",
+        "position": "COO",
+        "company": "NextGen Enterprises",
+        "image": "/testimonials/emp4.png?height=80&width=80",
+        "rating": 5,
+        "testimonial": "The comprehensive digital services from HUMAX CORP revolutionized our business operations. Their attention to detail and innovative solutions helped us achieve a 400% ROI within the first year of partnership."
+      },
+      {
+        "id": 5,
+        "name": "Lisa Wang",
+        "position": "Startup Founder",
+        "company": "FutureScope",
+        "image": "/testimonials/emp5.png?height=80&width=80",
+        "rating": 5,
+        "testimonial": "HUMAX CORP's expertise in digital reputation management and online valuation services helped us secure significant funding. Their strategic guidance was instrumental in positioning our startup for success in a competitive market."
+      },
+      {
+        "id": 6,
+        "name": "Robert Kim",
+        "position": "Business Owner",
+        "company": "Elite Consulting",
+        "image": "/testimonials/emp6.png?height=80&width=80",
+        "rating": 5,
+        "testimonial": "The transformation we experienced with HUMAX CORP was remarkable. From website optimization to comprehensive business strategy, they delivered results that exceeded our projections and set new standards for our industry."
+      }
+    ]
+  }
+  
