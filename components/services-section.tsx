@@ -183,7 +183,7 @@ export default function ServicesSection() {
 
               {/* Modal Content */}
               <div className="space-y-6">
-                <p className="text-gray-300 text-lg leading-relaxed">{selectedService.modalContent.description}</p>
+                <p className="text-gray-300 text-md leading-relaxed">{selectedService.modalContent.description}</p>
 
                 <div>
                   <h4 className="text-xl font-semibold text-yellow-400 mb-4">Key Features:</h4>
